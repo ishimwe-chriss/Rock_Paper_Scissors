@@ -6,7 +6,9 @@
    for(let i = 1; i <= 5; i++){
       playRound(i);
    } 
-   document.querySelector('button').textContent = "New Game"; 
+
+   document.querySelector('button').textContent = "New Game";
+    
     logWins();
  }
 

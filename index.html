@@ -3,11 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Game</title>
 </head>
 <body>
-    <center><h1>Welcome to Rock Paper Scissors Game</h1></center>
-   <center><button onclick="game()">Start Game</button></center> 
-    <script src="game.js"></script>
+   <div class="score">
+    <h1 class="ties">Ties: 0</h1>
+   </div>
+   <div class="winnerDiv">
+      <h1 class="winner"></h1>
+      <button class="reset" onclick="resetGame()">Play Again ?</button>
+   </div>
+   <div class="playerSection">
+     <h3 class="playerChoice"></h3>
+     <h3 class="playerScore">Score : 0</h3>
+     <div class="playerImgs">
+      <img src="./images/ro.png" alt="" class="pImage" id="rock">
+      <img src="./images/pa.png" alt="" class="pImage" id="paper">
+      <img src="./images/sc.png" alt="" class="pImage" id="scissors">
+     </div>
+   </div>
+   <div class="computerSection">
+      <h3 class="computerChoice"></h3>
+      <h3 class="computerScore">Score : 0</h3>
+      <div class="computerImgs">
+         <img src="./images/ro.png" alt="" class="rock" >
+         <img src="./images/pa.png" alt="" class="paper" >
+         <img src="./images/sc.png" alt="" class="scissors">
+     </div>     
+    </div>
 </body>
+     <script src="ui.js"></script>
 </html>
